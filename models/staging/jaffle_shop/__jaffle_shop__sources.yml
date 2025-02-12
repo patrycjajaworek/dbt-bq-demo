@@ -6,7 +6,13 @@ sources:
     dataset: raw
     tables:
       - name: Customers
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+              
       - name: Orders
       - name: Products
       - name: Payments
-      
+
