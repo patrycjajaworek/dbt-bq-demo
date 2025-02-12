@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: woven-surface-450008-a3
+    database: woven-surface-450008-a3
+    dataset: raw
+    tables:
+      - name: Customers
+      - name: Orders
+      - name: Products
+      - name: Payments
+      
