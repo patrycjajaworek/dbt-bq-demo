@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: woven-surface-450008-a3
-    description: A clone of a Postgres application database.
+    description: A clone of an application database.
     database: woven-surface-450008-a3
     dataset: raw
     tables:
