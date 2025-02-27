@@ -1,7 +1,7 @@
 WITH orders AS (
     SELECT 
         id AS order_id,
-        user_id,
+        user_id as customer_id,
         order_date,
         status
     FROM raw.Orders
@@ -17,7 +17,7 @@ payments AS (
 
 SELECT 
     o.order_id,
-    o.user_id,
+    o.customer_id,
     o.order_date,
     o.status,
     p.payment_method,

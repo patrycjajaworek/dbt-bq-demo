@@ -39,6 +39,7 @@ models:
   jaffle_shop:
     staging:
       +materialized: view
+      tags: test_tag
     marts:
       +materialized: table
 

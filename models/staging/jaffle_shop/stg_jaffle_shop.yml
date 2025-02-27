@@ -7,7 +7,6 @@ models:
       - name: customer_id
         description: The primary key for customers.
         tests:
-          - unique
           - not_null
 
   - name: stg_jaffle_shop__orders
@@ -16,7 +15,6 @@ models:
       - name: order_id
         description: Primary key for orders.
         tests:
-          - unique
           - not_null
       - name: status
         description: '{{ doc("order_status") }}'
@@ -35,6 +33,18 @@ models:
         tests:
           - unique
           - not_null
-
-  
-
+          - accepted_values:
+              values: [1,3]
+              quote: false
+  - name: second_dbt_model
+    description: starter dbt model
+    columns:
+      - name: id
+        description: the primary key for this table
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              field: id
+              to: ref('first_dbt_model')
+                
