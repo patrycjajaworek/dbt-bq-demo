@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: woven-surface-450008-a3
+    description: A clone of an application database.
+    database: woven-surface-450008-a3
+    dataset: raw
+    tables:
+      - name: Customers
+        description: Raw customers data.
+        columns:
+          - name: id
+            description: Primary key for customers.
+            tests:
+              - unique
+              - not_null
+              
+      - name: Orders
+        description: Raw orders data.
+        columns:
+          - name: id
+            description: Primary key for orders.
+            tests:
+              - unique
+              - not_null
+      - name: Products
+      - name: Payments
+
