@@ -42,5 +42,7 @@ models:
       tags: test_tag
     marts:
       +materialized: table
+    first:
+      tags: first
 
   
