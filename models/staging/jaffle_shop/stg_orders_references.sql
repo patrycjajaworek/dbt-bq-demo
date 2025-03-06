@@ -12,7 +12,7 @@ payments AS (
         order_id,
         payment_method,
         {{ clean_amount('amount') }} AS total_amount_cleaned
-    FROM raw.Payments
+    FROM {{source("woven-surface-450008-a3",'Payments')}}
 )
 
 SELECT 
