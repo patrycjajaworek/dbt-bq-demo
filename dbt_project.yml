@@ -41,7 +41,6 @@ models:
       +materialized: view
     marts:
       +materialized: table
-    first:
-      tags: first
+    
     
   
