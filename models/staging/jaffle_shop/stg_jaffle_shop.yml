@@ -44,6 +44,12 @@ models:
         tests:
           - unique
           - not_null
+  - name: unique_test
+    description: test - unique
+    columns:
+      - name: id
+        tests:
+          - unique
          
   
 
