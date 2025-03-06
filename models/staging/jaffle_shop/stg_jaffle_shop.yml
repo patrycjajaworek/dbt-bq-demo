@@ -44,32 +44,8 @@ models:
         tests:
           - unique
           - not_null
-          - relationships:
-              field: id
-              to: ref('first_dbt_model')
-  - name: unique_test
-    description: table to test unique type of test
-    columns:
-      - name: id
-        description: the primary key for this table
-        tests:
-          - unique
-  - name: not_null_test
-    description: table to test not null type of test
-    columns:
-      - name: id
-        description: the primary key for this table
-        tests:
-          - not_null
-  - name: accepted_values_test
-    description: table to test accepted values type of test
-    columns:
-      - name: id
-        description: the primary key for this table
-        tests:
-          - accepted_values:
-              values: [1,2]
-              quote: false
+         
+  
 
           
                 

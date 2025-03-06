@@ -1,0 +1,16 @@
+version: 2
+
+
+sources:
+  - name: woven-surface-450008-a3
+    description: A clone of an application database.
+    database: woven-surface-450008-a3
+    dataset: raw
+    tables:
+      - name: Customers
+        description: Raw customers data
+      - name: Orders
+      - name: Products
+      - name: Payments
+      - name: Time
+
